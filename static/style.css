@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg:#D2FF9A;
+    --primary:#101651;
+    --secondary:#101651;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg);
+}
+
+  /* Set the base font size for better responsiveness */
+  html {
+    font-size: 16px;
+  }
+  
+  .wrapper {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .search-wrapper {
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+  
+  .search-input {
+    display: flex;
+    align-items: center;
+    max-width: 31.25rem;
+    margin: 0 auto;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    color: var(--bg);
+    padding: 0.625rem;
+    font-size: 1rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 0.3125rem 0 0 0.3125rem;
+  }
+  
+  button {
+    background-color: var(--secondary);
+    color: var(--bg);
+    border: none;
+    padding: 0.625rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    border-left: 1px solid var(--bg);
+    border-radius: 0 0.3125rem 0.3125rem 0;
+  }
+  
+  h3 {
+    font-size: 1.125rem;
+    color: var(--primary);
+    margin-bottom: 0.625rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 37.5rem) {
+    /* Adjust styles for small screens */
+    .wrapper {
+      padding: 0.625rem;
+    }
+  
+    .search-input {
+      max-width: 100%;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  
+
+
+/* .wrapper{
+    width:100vw;
+    height: 100vh;
+}
+
+.search-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input input{
+    padding: 0.5rem;
+    height: 1.5rem;
+}
+
+.search-input button{
+    height: 2rem;
+    width: 2rem;
+}
+
+.search-input i{
+    size: 2rem;
+}
+
+#enterWord{
+
+} */

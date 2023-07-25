@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>engDictionary</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://kit.fontawesome.com/6b0af4bcb3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="search-wrapper">
+            <h1>the dictionary for the losers</h1>
+            <form action="word">
+                <div class="search-input">
+                <input type="text" id="enterWord" placeholder="Enter your word here..." name="search">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            </form>
+        </div>
+        <div><h3>Meaning: </h3>{{meaning}}</div>
+        <div>
+        <h3>Synonyms: </h3>{% for synonym in synonyms %}
+            {{synonym}},
+            {% endfor %}
+        </div>
+        <div>
+        <h3>Antonyms: </h3>{% for antonym in antonyms %}
+            {{antonym}},
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
